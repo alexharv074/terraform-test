@@ -1,0 +1,13 @@
+---
+trigger: none
+pr: none
+
+pool:
+  vmImage: ubuntu-16.04
+
+jobs:
+ - job: ExampleRun
+   steps:
+     - powershell: |
+         Write-host "Hello World"
+       displayName: "Print Hello World"
